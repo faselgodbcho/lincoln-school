@@ -8,10 +8,13 @@ import Departments from "./pages/Departments";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
+import useScrollToTop from "./hooks/useScrollToTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const App = () => {
+  useScrollToTop();
+
   useEffect(() => {
     // Initialize AOS
     AOS.init({

@@ -69,6 +69,7 @@ const Header = () => {
               <NavLink
                 to="/"
                 className="max-md:text-white font-medium"
+                onClick={() => setIsMenuOpen(false)}
                 style={activeClassName}
               >
                 Home
@@ -78,6 +79,7 @@ const Header = () => {
               <NavLink
                 to="/about"
                 className="max-md:text-white font-medium"
+                onClick={() => setIsMenuOpen(false)}
                 style={activeClassName}
               >
                 About
@@ -87,6 +89,7 @@ const Header = () => {
               <NavLink
                 to="/clubs"
                 className="max-md:text-white font-medium"
+                onClick={() => setIsMenuOpen(false)}
                 style={activeClassName}
               >
                 Clubs
@@ -96,6 +99,7 @@ const Header = () => {
               <NavLink
                 to="/departments"
                 className="max-md:text-white font-medium"
+                onClick={() => setIsMenuOpen(false)}
                 style={activeClassName}
               >
                 Departments
@@ -105,6 +109,7 @@ const Header = () => {
               <NavLink
                 to="/login"
                 className="max-md:text-white font-medium md:hidden"
+                onClick={() => setIsMenuOpen(false)}
                 style={activeClassName}
               >
                 Login
@@ -114,6 +119,7 @@ const Header = () => {
               <NavLink
                 to="/register"
                 className="max-md:text-white font-medium"
+                onClick={() => setIsMenuOpen(false)}
                 style={activeClassName}
               >
                 Register
