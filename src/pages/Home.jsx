@@ -2,14 +2,17 @@ import HeroImg from "../assets/images/hero-img.png";
 import AboutImg from "../assets/images/about-img.png";
 import BooksImg from "../assets/images/books-img.png";
 import { NavLink } from "react-router-dom";
+import useWindowSize from "../hooks/useWindowSize";
 
 const Home = () => {
+  const { width } = useWindowSize();
+
   return (
     <main>
       <section id="hero" className="scroll-mt-20 min-h-screen bg-light-bg">
         <div className="text-center md:text-left w-full lg:container mx-auto flex flex-col md:flex-row justify-center gap-8 py-4 lg:px-28 sm:px-14 px-4">
           <div data-aos="fade" className="pt-4 md:pt-16 mx-auto">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl text-primary max-w-[13ch] font-extrabold sm:font-black">
+            <h1 className="text-5xl md:text-6xl text-primary max-w-[13ch] font-extrabold sm:font-black">
               Let's start building a new generation
             </h1>
 
@@ -39,7 +42,7 @@ const Home = () => {
       <section id="boxes" className="scroll-mt-20 bg-light-bg py-4">
         <div className="container mx-auto flex-wrap pb-8 lg:p-8 w-full flex justify-center gap-4 lg:gap-16">
           <div
-            data-aos="fade-up"
+            data-aos={width <= 640 ? "fade-right" : "fade-up"}
             className="rounded max-w-80 sm:max-w-60 py-8 px-6 bg-white shadow-xl hover:shadow-2xl cursor-default"
           >
             <h1 className="text-primary text-3xl font-bold mb-2">Goal</h1>
@@ -50,7 +53,7 @@ const Home = () => {
           </div>
 
           <div
-            data-aos="fade-down"
+            data-aos={width <= 640 ? "fade-left" : "fade-down"}
             className="rounded max-w-80 sm:max-w-60 py-8 px-6 bg-white shadow-xl hover:shadow-2xl cursor-default"
           >
             <h1 className="text-primary text-3xl font-bold mb-2">Mission</h1>
@@ -61,7 +64,7 @@ const Home = () => {
           </div>
 
           <div
-            data-aos="fade-up"
+            data-aos={width <= 640 ? "fade-right" : "fade-up"}
             className="rounded max-w-80 sm:max-w-60 py-8 px-6 bg-white shadow-xl hover:shadow-2xl cursor-default"
           >
             <h1 className="text-primary text-3xl font-bold mb-2">Vision</h1>
@@ -104,7 +107,7 @@ const Home = () => {
       <section id="login" className="scroll-mt-20 bg-light-bg w-full">
         <div className="text-center md:text-left w-full lg:container mx-auto flex flex-col md:flex-row justify-center gap-8 py-8 md:py-16 lg:px-28 px-6">
           <form
-            data-aos="fade-up-right"
+            data-aos="fade-right"
             className="md:w-1/2"
             onSubmit={(e) => e.preventDefault()}
           >
