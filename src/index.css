@@ -8,8 +8,7 @@
 }
 
 body {
-  /*   @apply overflow-hidden; */
-  @apply bg-light-bg min-h-screen w-full;
+  @apply bg-light-bg min-h-screen w-full overflow-x-hidden;
 }
 
 main {
@@ -18,6 +17,10 @@ main {
 
 main > section#hero {
   @apply pt-[68px];
+}
+
+section {
+  overflow: hidden;
 }
 
 .btn-primary {

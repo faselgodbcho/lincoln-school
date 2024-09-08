@@ -9,7 +9,7 @@ const About = () => {
         className="scroll-mt-40 bg-babyBlue-bg min-h-screen w-full"
       >
         <div className="text-center md:text-left w-full lg:container mx-auto flex flex-col md:flex-row justify-center md:gap-8 lg:px-28 px-12 max-[380px]:px-4">
-          <div className="md:w-1/2 pt-4 md:pt-32 mx-auto ">
+          <div data-aos="fade" className="md:w-1/2 pt-4 md:pt-32 mx-auto ">
             <h1 className="text-3xl sm:text-3xl md:text-5xl text-primary  font-extrabold">
               About our school
             </h1>
@@ -26,7 +26,10 @@ const About = () => {
             </a>
           </div>
 
-          <div className="mx-auto self-center lg:max-w-md md:max-w-lg max-w-96 md:w-1/2">
+          <div
+            data-aos="fade"
+            className="mx-auto self-center lg:max-w-md md:max-w-lg max-w-96 md:w-1/2"
+          >
             <img src={AboutImg} className="w-full" />
           </div>
         </div>
@@ -34,11 +37,14 @@ const About = () => {
 
       <section id="details" className="scroll-mt-20  w-full">
         <div className="text-center md:text-left w-full lg:container mx-auto flex flex-col-reverse md:flex-row justify-center gap-16 py-8 md:py-16 lg:px-12 px-6">
-          <div className="mx-auto lg:max-w-md md:max-w-lg max-w-96 md:w-1/2">
+          <div
+            data-aos="fade-right"
+            className="mx-auto lg:max-w-md md:max-w-lg max-w-96 md:w-1/2"
+          >
             <img src={LabImg} className="w-full" />
           </div>
 
-          <div className="md:w-1/2 pt-4 md:pt-16 mx-auto">
+          <div data-aos="fade-left" className="md:w-1/2 pt-4 md:pt-16 mx-auto">
             <h2 className="text-3xl sm:text-3xl md:text-4xl text-primary  font-extrabold">
               Goals
             </h2>
@@ -57,7 +63,7 @@ const About = () => {
         </div>
 
         <div className="text-center md:text-left w-full lg:container mx-auto flex flex-col md:flex-row justify-center gap-16 py-8 md:py-16 lg:px-12 px-6">
-          <div className="md:w-1/2 pt-4 md:pt-16 mx-auto">
+          <div data-aos="fade-right" className="md:w-1/2 pt-4 md:pt-16 mx-auto">
             <h2 className="text-3xl sm:text-3xl md:text-4xl text-primary  font-extrabold">
               Mission
             </h2>
@@ -74,17 +80,23 @@ const About = () => {
             </a>
           </div>
 
-          <div className="mx-auto lg:max-w-md md:max-w-lg max-w-96 md:w-1/2">
+          <div
+            data-aos="fade-left"
+            className="mx-auto lg:max-w-md md:max-w-lg max-w-96 md:w-1/2"
+          >
             <img src={LabImg} className="w-full" />
           </div>
         </div>
 
         <div className="text-center md:text-left w-full lg:container mx-auto flex flex-col-reverse md:flex-row justify-center gap-16 py-8 md:py-16 lg:px-12 px-6">
-          <div className="mx-auto lg:max-w-md md:max-w-lg max-w-96 md:w-1/2">
+          <div
+            data-aos="fade-right"
+            className="mx-auto lg:max-w-md md:max-w-lg max-w-96 md:w-1/2"
+          >
             <img src={LabImg} className="w-full" />
           </div>
 
-          <div className="md:w-1/2 pt-4 md:pt-16 mx-auto">
+          <div data-aos="fade-left" className="md:w-1/2 pt-4 md:pt-16 mx-auto">
             <h2 className="text-3xl sm:text-3xl md:text-4xl text-primary  font-extrabold">
               Vission
             </h2>
