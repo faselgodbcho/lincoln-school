@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+* {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+body {
+  /*   @apply overflow-hidden; */
+  @apply bg-light-bg min-h-screen w-full;
+}
+
+main {
+  @apply min-h-screen;
+}
+
+main > section#hero {
+  @apply pt-[68px];
+}
+
+.btn-primary {
+  @apply bg-primary text-white py-2 px-4 rounded select-none;
+}
+
+.btn-outline {
+  @apply text-primary py-2 px-4 rounded border border-primary select-none;
+}
+
+.btn-outline:hover {
+  @apply bg-primary text-white;
+}
