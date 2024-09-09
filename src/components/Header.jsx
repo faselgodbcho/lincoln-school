@@ -129,12 +129,15 @@ const Header = () => {
         </nav>
 
         <div className="hidden md:flex gap-4 text-sm">
-          <button className="font-semibold">
-            <NavLink to="/login">Login</NavLink>
-          </button>
-          <button className="btn-primary">
-            <NavLink to="/register">Register</NavLink>
-          </button>
+          <NavLink
+            className="flex items-center justify-center font-semibold"
+            to="/login"
+          >
+            Login
+          </NavLink>
+          <NavLink className="btn-primary" to="/register">
+            Register
+          </NavLink>
         </div>
 
         {/* Mobile Menu Icon */}
