@@ -10,10 +10,10 @@ const Step2 = () => {
     <>
       <div className="max-w-full mb-4">
         <div className="flex items-center pt-8 gap-8 justify-center">
-          <div className="max-w-32">
+          <div className="w-32 h-32">
             <img
               src={data.studentImage || profileImg}
-              className="w-full rounded-lg"
+              className="w-full h-full rounded-lg"
             />
           </div>
 
@@ -26,7 +26,7 @@ const Step2 = () => {
               htmlFor="studentImage"
               className="p-2 rounded text-white bg-secondary cursor-pointer"
             >
-              Upload
+              {data.studentImage ? "Update" : "Upload"}
             </label>
           </div>
 

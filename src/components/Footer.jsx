@@ -55,7 +55,7 @@ const Footer = () => {
             <select
               name="languages"
               id="lang"
-              className=" sm:px-4 sm:py-2 max-sm:text-sm"
+              className="sm:px-4 sm:py-2 max-sm:text-sm border outline-none rounded"
             >
               <option value="English">English</option>
               <option value="Amharic">Amharic</option>

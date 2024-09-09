@@ -59,7 +59,7 @@ const Register = () => {
 
           <div className="flex-1 gap-2 md:gap-16 flex flex-col sm:flex-row justify-center max-sm:px-6 max-sm:max-[380px]:px-4">
             <div className=" sm:w-1/2 pt-14 text-primary">
-              <h1 className="font-bold text-[2rem] md:text-4xl">
+              <h1 className="font-bold text-[2rem] md:text-4xl max-w-[13ch]">
                 {title[page]}
               </h1>
 
@@ -88,7 +88,7 @@ const Register = () => {
                   disabled={!disableNext}
                   type="submit"
                 >
-                  Submit
+                  Register
                 </button>
               </div>
             </div>

@@ -21,9 +21,7 @@ export const FormProvider = ({ children }) => {
 
   const subTitle = [
     "Enter your first name, middle name and last name",
-    `${
-      formData.firstName && `Hey ${formData.firstName},`
-    }  Please enter your gender, age and grade level`,
+    "Please enter your gender, age and grade level",
     "Please enter your kebele and mender",
     "Almost there! Please select your image",
   ];

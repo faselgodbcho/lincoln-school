@@ -20,12 +20,13 @@ const Step1 = () => {
           onChange={handleChange}
         />
       </div>
+
       <div className="max-w-full mb-4">
         <label htmlFor="middleName" className="block mb-2">
           Middle Name
         </label>
         <input
-          className="block w-full py-2 rounded focus:outline-none px-7"
+          className="block w-full py-2 rounded focus:outline-none px-6"
           type="text"
           id="middleName"
           placeholder="Middle Name"
@@ -34,6 +35,7 @@ const Step1 = () => {
           onChange={handleChange}
         />
       </div>
+
       <div className="max-w-full mb-4">
         <label htmlFor="lastName" className="block mb-2">
           Last Name
