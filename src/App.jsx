@@ -4,7 +4,7 @@ import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Clubs from "./pages/Clubs";
-import Departments from "./pages/Departments";
+import OurStaff from "./pages/OurStaff";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
@@ -21,7 +21,7 @@ const App = () => {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
-      once: false,
+      once: true,
       mirror: true,
     });
   }, []);
@@ -34,7 +34,7 @@ const App = () => {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="clubs" element={<Clubs />} />
-            <Route path="departments" element={<Departments />} />
+            <Route path="staff" element={<OurStaff />} />
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
             <Route path="*" element={<NotFound />} />

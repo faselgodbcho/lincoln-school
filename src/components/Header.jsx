@@ -97,12 +97,12 @@ const Header = () => {
             </li>
             <li className="hover:opacity-90 px-1">
               <NavLink
-                to="/departments"
+                to="/staff"
                 className="max-md:text-white font-medium"
                 onClick={() => setIsMenuOpen(false)}
                 style={activeClassName}
               >
-                Departments
+                Our Staff
               </NavLink>
             </li>
             <li className="hover:opacity-90 px-1">
