@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <main>
-      <section id="hero" className="scroll-mt-20 min-h-screen bg-light-bg">
+      <section id="hero" className="scroll-mt-20 bg-light-bg">
         <div className="text-center md:text-left w-full lg:container mx-auto flex flex-col md:flex-row justify-center gap-8 py-4 lg:px-28 sm:px-14 px-4">
           <div data-aos="fade" className="pt-4 md:pt-16 mx-auto">
             <h1 className="text-5xl md:text-6xl text-primary max-w-[13ch] font-extrabold sm:font-black">
@@ -79,7 +79,7 @@ const Home = () => {
       <section id="about" className="scroll-mt-20 bg-babyBlue-bg w-full">
         <div className="text-center md:text-left w-full lg:container mx-auto flex flex-col md:flex-row justify-center gap-8 py-8 md:py-16 lg:px-28 px-6">
           <div
-            data-aos="zoom-out"
+            data-aos="fade-right"
             className="mx-auto lg:max-w-md md:max-w-lg max-w-96 md:w-1/2"
           >
             <img src={AboutImg} className="w-full" />
@@ -151,7 +151,7 @@ const Home = () => {
           </form>
 
           <div
-            data-aos="zoom-out"
+            data-aos="fade-left"
             className="mx-auto lg:max-w-md md:max-w-lg max-w-96 md:w-1/2"
           >
             <img src={BooksImg} className="w-full" />
