@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
+import useWindowSize from "../hooks/useWindowSize";
 import { NavLink } from "react-router-dom";
 import { MdClose } from "react-icons/md";
 
@@ -7,10 +8,9 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [headerFromTop, setHeaderFromTop] = useState(0);
   const location = useLocation();
-
+  const { width } = useWindowSize();
   const textStyle =
     location.pathname === "/clubs" ? "text-white shadow-lg" : "!text-primary";
-
   const activeClassName = ({ isActive }) => {
     return isActive
       ? {
@@ -18,6 +18,20 @@ const Header = () => {
         }
       : { fontWeight: null };
   };
+  const closeMobileMenu = () => setIsMenuOpen(false);
+  const headerRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (headerRef.current && !headerRef.current.contains(e.target)) {
+        closeMobileMenu();
+      }
+    };
+
+    window.addEventListener("click", handleClickOutside);
+
+    return () => window.removeEventListener("click", handleClickOutside);
+  }, []);
 
   useEffect(() => {
     const setTopShift = () => {
@@ -45,6 +59,7 @@ const Header = () => {
           : "bg-transparent"
       } fixed w-full z-10`}
       id="header"
+      ref={headerRef}
     >
       <section className="container p-4 mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-extrabold ">
@@ -59,7 +74,7 @@ const Header = () => {
         >
           <div
             id="close-mobile-menu"
-            onClick={() => setIsMenuOpen(false)}
+            onClick={closeMobileMenu}
             className="md:hidden cursor-pointer absolute top-3 left-3"
           >
             <MdClose size="1.8em" />
@@ -69,7 +84,7 @@ const Header = () => {
               <NavLink
                 to="/"
                 className="max-md:text-white font-medium"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={closeMobileMenu}
                 style={activeClassName}
               >
                 Home
@@ -79,7 +94,7 @@ const Header = () => {
               <NavLink
                 to="/about"
                 className="max-md:text-white font-medium"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={closeMobileMenu}
                 style={activeClassName}
               >
                 About
@@ -89,7 +104,7 @@ const Header = () => {
               <NavLink
                 to="/clubs"
                 className="max-md:text-white font-medium"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={closeMobileMenu}
                 style={activeClassName}
               >
                 Clubs
@@ -99,7 +114,7 @@ const Header = () => {
               <NavLink
                 to="/staff"
                 className="max-md:text-white font-medium"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={closeMobileMenu}
                 style={activeClassName}
               >
                 Our Staff
@@ -109,7 +124,7 @@ const Header = () => {
               <NavLink
                 to="/login"
                 className="max-md:text-white font-medium md:hidden"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={closeMobileMenu}
                 style={activeClassName}
               >
                 Login
@@ -119,7 +134,7 @@ const Header = () => {
               <NavLink
                 to="/register"
                 className="max-md:text-white font-medium"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={closeMobileMenu}
                 style={activeClassName}
               >
                 Register
