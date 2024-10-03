@@ -5,8 +5,11 @@ import { FaTelegramPlane } from "react-icons/fa";
 const StaffCard = () => {
   return (
     <div className="flex p-6 rounded bg-black bg-opacity-5 flex-col gap-4 max-w-[300px] mb-4 sm:mb-0 text-primary">
-      <div>
-        <img src={PlaceholderImage} className="w-100 rounded" />
+      <div className="w-full h-full overflow-hidden relative">
+        <img
+          src={PlaceholderImage}
+          className="w-full h-auto transition hover:scale-110 rounded"
+        />
       </div>
 
       <div>
