@@ -117,7 +117,7 @@ const Header = () => {
                 onClick={closeMobileMenu}
                 style={activeClassName}
               >
-                Administrators and Staffs
+                Admins and Staffs
               </NavLink>
             </li>
             <li className="hover:opacity-90 px-1">
