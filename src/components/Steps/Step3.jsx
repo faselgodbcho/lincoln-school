@@ -1,4 +1,5 @@
 import useFormContext from "../../hooks/useFormContext";
+import Input from "../Input";
 
 const Step2 = () => {
   const { formData, handleChange } = useFormContext();
@@ -11,8 +12,7 @@ const Step2 = () => {
         <label htmlFor="kebele" className="block mb-2">
           Kebele
         </label>
-        <input
-          className="block w-full py-2 rounded focus:outline-none px-7"
+        <Input
           type="text"
           id="kebele"
           placeholder="Kebele"
@@ -25,7 +25,7 @@ const Step2 = () => {
         <label htmlFor="mender" className="block mb-2">
           Mender
         </label>
-        <input
+        <Input
           className="block w-full py-2 rounded focus:outline-none px-7"
           type="text"
           id="mender"
