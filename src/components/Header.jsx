@@ -63,7 +63,7 @@ const Header = () => {
     >
       <section className="container p-4 mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-extrabold ">
-          <NavLink to="/">Abba school</NavLink>
+          <NavLink to="/">Lincoln School</NavLink>
         </h1>
 
         <nav
