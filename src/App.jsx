@@ -1,7 +1,15 @@
 import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
-import { Home, About, Clubs, Login, Register, NotFound } from "./pages";
+import {
+  Home,
+  About,
+  Clubs,
+  Login,
+  Register,
+  OurStaff,
+  NotFound,
+} from "./pages";
 import useScrollToTop from "./hooks/useScrollToTop";
 import { FormProvider } from "./contexts/FormContext";
 import AOS from "aos";
@@ -30,6 +38,7 @@ const App = () => {
             <Route path="clubs" element={<Clubs />} />
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
+            <Route path="staff" element={<OurStaff />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

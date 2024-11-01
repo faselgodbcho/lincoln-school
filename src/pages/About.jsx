@@ -15,10 +15,10 @@ const About = () => {
             </h1>
 
             <p className="mt-5 mb-8">
-              We aim to improve school quality by supporting pupils in line with
-              Ethiopian Education and Training Policy. We aim to improve school
-              quality by supporting pupils in line with Ethiopian Education and
-              Training Policy.
+              Welcome to our school, where learning and growth go hand in hand.
+              Our dedicated staff and engaging curriculum aim to inspire
+              students to reach their full potential. We believe in nurturing
+              curiosity, building confidence, and fostering a community.
             </p>
 
             <a href="#details" className="text-secondary text-sm">
@@ -30,7 +30,10 @@ const About = () => {
             data-aos="fade"
             className="mx-auto self-center lg:max-w-md md:max-w-lg max-w-96 md:w-1/2"
           >
-            <img src={AboutImg} className="w-full" />
+            <img
+              src="/images/little-kid-decor.png"
+              className="w-full max-w-[370px] mx-auto"
+            />
           </div>
         </div>
       </section>
@@ -41,7 +44,7 @@ const About = () => {
             data-aos="fade-right"
             className="mx-auto lg:max-w-md md:max-w-lg max-w-96 md:w-1/2"
           >
-            <img src={LabImg} className="w-full" />
+            <img src="/images/school-goals.png" className="w-full" />
           </div>
 
           <div data-aos="fade-left" className="md:w-1/2 pt-4 md:pt-16 mx-auto">
@@ -50,10 +53,10 @@ const About = () => {
             </h2>
 
             <p className="mt-5 mb-8 max-w-xl">
-              We aim to improve school quality by supporting pupils in line with
-              Ethiopian Education and Training Policy. We aim to improve school
-              quality by supporting pupils in line with Ethiopian Education and
-              Training Policy.
+              Welcome to our school, where learning and growth go hand in hand.
+              Our dedicated staff and engaging curriculum aim to inspire
+              students to reach their full potential. We believe in nurturing
+              curiosity, building confidence, and fostering a community.
             </p>
 
             <a href="/about" className="text-secondary text-sm">
@@ -69,10 +72,10 @@ const About = () => {
             </h2>
 
             <p className="mt-5 mb-8 max-w-xl">
-              We aim to improve school quality by supporting pupils in line with
-              Ethiopian Education and Training Policy. We aim to improve school
-              quality by supporting pupils in line with Ethiopian Education and
-              Training Policy.
+              Welcome to our school, where learning and growth go hand in hand.
+              Our dedicated staff and engaging curriculum aim to inspire
+              students to reach their full potential. We believe in nurturing
+              curiosity, building confidence, and fostering a community.
             </p>
 
             <a href="/about" className="text-secondary text-sm">
@@ -84,7 +87,7 @@ const About = () => {
             data-aos="fade-left"
             className="mx-auto lg:max-w-md md:max-w-lg max-w-96 md:w-1/2"
           >
-            <img src={LabImg} className="w-full" />
+            <img src="/images/school-mission.png" className="w-full" />
           </div>
         </div>
 
@@ -93,7 +96,7 @@ const About = () => {
             data-aos="fade-right"
             className="mx-auto lg:max-w-md md:max-w-lg max-w-96 md:w-1/2"
           >
-            <img src={LabImg} className="w-full" />
+            <img src="/images/school-vision.png" className="w-full" />
           </div>
 
           <div data-aos="fade-left" className="md:w-1/2 pt-4 md:pt-16 mx-auto">
@@ -102,10 +105,10 @@ const About = () => {
             </h2>
 
             <p className="mt-5 mb-8 max-w-xl">
-              We aim to improve school quality by supporting pupils in line with
-              Ethiopian Education and Training Policy. We aim to improve school
-              quality by supporting pupils in line with Ethiopian Education and
-              Training Policy.
+              Welcome to our school, where learning and growth go hand in hand.
+              Our dedicated staff and engaging curriculum aim to inspire
+              students to reach their full potential. We believe in nurturing
+              curiosity, building confidence, and fostering a community.
             </p>
 
             <a href="/about" className="text-secondary text-sm">

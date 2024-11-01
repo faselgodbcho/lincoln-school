@@ -47,8 +47,8 @@ const Home = () => {
           >
             <h1 className="text-primary text-3xl font-bold mb-2">Goal</h1>
             <p className="text-sm">
-              We aim to improve school quality by supporting pupils in line with
-              Ethiopian Education and Training Policy.
+              Welcome to our school, where learning and growth go hand in hand.
+              Our engaging curriculum aim to inspire students.
             </p>
           </div>
 
@@ -58,8 +58,8 @@ const Home = () => {
           >
             <h1 className="text-primary text-3xl font-bold mb-2">Mission</h1>
             <p className="text-sm">
-              We aim to improve school quality by supporting pupils in line with
-              Ethiopian Education and Training Policy.
+              Welcome to our school, where learning and growth go hand in hand.
+              Our engaging curriculum aim to inspire students.
             </p>
           </div>
 
@@ -69,8 +69,8 @@ const Home = () => {
           >
             <h1 className="text-primary text-3xl font-bold mb-2">Vision</h1>
             <p className="text-sm">
-              We aim to improve school quality by supporting pupils in line with
-              Ethiopian Education and Training Policy.
+              Welcome to our school, where learning and growth go hand in hand.
+              Our engaging curriculum aim to inspire students.
             </p>
           </div>
         </div>
@@ -91,10 +91,11 @@ const Home = () => {
             </h1>
 
             <p className="mt-5 mb-8">
-              We aim to improve school quality by supporting pupils in line with
-              Ethiopian Education and Training Policy. We aim to improve school
-              quality by supporting pupils in line with Ethiopian Education and
-              Training Policy.
+              Welcome to our school, where learning and growth go hand in hand.
+              Our dedicated staff and engaging curriculum aim to inspire
+              students to reach their full potential. We believe in nurturing
+              curiosity, building confidence, and fostering a community where
+              every student feels valued.
             </p>
 
             <NavLink to="/about" className="text-secondary text-sm">

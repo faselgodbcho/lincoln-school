@@ -8,7 +8,7 @@ export const FormProvider = ({ children }) => {
   const [formData, setFormData] = useState([
     { firstName: "", middleName: "", lastName: "" },
     { gender: "", age: "", grade: "" },
-    { kebele: "", mender: "" },
+    { addressOne: "", addressTwo: "" },
     { studentImage: "" },
   ]);
 
@@ -22,7 +22,7 @@ export const FormProvider = ({ children }) => {
   const subTitle = [
     "Enter your first name, middle name and last name",
     "Please enter your gender, age and grade level",
-    "Please enter your kebele and mender",
+    "Please enter your address",
     "Almost there! Please select your image",
   ];
 

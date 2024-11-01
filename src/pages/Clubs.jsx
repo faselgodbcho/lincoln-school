@@ -38,10 +38,10 @@ const Clubs = () => {
             </h2>
 
             <p className="mt-5 mb-8 max-w-xl">
-              We aim to improve school quality by supporting pupils in line with
-              Ethiopian Education and Training Policy. We aim to improve school
-              quality by supporting pupils in line with Ethiopian Education and
-              Training Policy.
+              Welcome to our school, where learning and growth go hand in hand.
+              Our dedicated staff and engaging curriculum aim to inspire
+              students to reach their full potential. We believe in nurturing
+              curiosity, building confidence, and fostering a community.
             </p>
 
             <a href="/about" className="text-secondary text-sm">
@@ -71,10 +71,10 @@ const Clubs = () => {
             </h2>
 
             <p className="mt-5 mb-8 max-w-xl">
-              We aim to improve school quality by supporting pupils in line with
-              Ethiopian Education and Training Policy. We aim to improve school
-              quality by supporting pupils in line with Ethiopian Education and
-              Training Policy.
+              Welcome to our school, where learning and growth go hand in hand.
+              Our dedicated staff and engaging curriculum aim to inspire
+              students to reach their full potential. We believe in nurturing
+              curiosity, building confidence, and fostering a community.
             </p>
 
             <a href="/about" className="text-secondary text-sm">
@@ -90,10 +90,10 @@ const Clubs = () => {
             </h2>
 
             <p className="mt-5 mb-8 max-w-xl">
-              We aim to improve school quality by supporting pupils in line with
-              Ethiopian Education and Training Policy. We aim to improve school
-              quality by supporting pupils in line with Ethiopian Education and
-              Training Policy.
+              Welcome to our school, where learning and growth go hand in hand.
+              Our dedicated staff and engaging curriculum aim to inspire
+              students to reach their full potential. We believe in nurturing
+              curiosity, building confidence, and fostering a community.
             </p>
 
             <a href="/about" className="text-secondary text-sm">

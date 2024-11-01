@@ -9,29 +9,29 @@ const Step2 = () => {
   return (
     <>
       <div className="max-w-full mb-4">
-        <label htmlFor="kebele" className="block mb-2">
-          Kebele
+        <label htmlFor="addressOne" className="block mb-2">
+          Address One
         </label>
         <Input
           type="text"
-          id="kebele"
-          placeholder="Kebele"
-          name="kebele"
-          value={data.kebele}
+          id="addressOne"
+          placeholder="AddressOne"
+          name="addressOne"
+          value={data.addressOne}
           onChange={handleChange}
         />
       </div>
       <div className="max-w-full mb-4">
-        <label htmlFor="mender" className="block mb-2">
-          Mender
+        <label htmlFor="addressTwo" className="block mb-2">
+          Address Two
         </label>
         <Input
           className="block w-full py-2 rounded focus:outline-none px-7"
           type="text"
-          id="mender"
-          placeholder="Mender"
-          name="mender"
-          value={data.mender}
+          id="addressTwo"
+          placeholder="AddressTwo"
+          name="addressTwo"
+          value={data.addressTwo}
           onChange={handleChange}
         />
       </div>
